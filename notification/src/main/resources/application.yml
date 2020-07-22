@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+  mail:
+    host: smtp.mailtrap.io
+    port: 465
+    username: fdc84728455965
+    password: 913ddba0c774b7
+    properties:
+      mail.transport.protocol: smtp
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.debug: false
+
+app:
+  notification:
+    email:
+      to: Friend.Fools@gmail.com
+      subject: El registro de su cita se ha realizado con éxito.
+      text: Le agradecemos acercarse el dia y la hora exacta en la que se le indicó. Gracias y te esperamos!!!
